@@ -5,9 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>The Basic Language of the Web: HTML</title>
+    <link href="./css/style.css" rel="stylesheet" />
   </head>
   <body>
-    <header>
+    <header class="main-header">
       <h1>📘 The Code Magazine</h1>
 
       <nav>
@@ -18,9 +19,13 @@
       </nav>
     </header>
     <article>
-      <h2>The Basic Language of the Web: HTML</h2>
-      <img src="./img/laura-jones.jpg" width="50px" />
-      <p>Posted by <strong>Laura Jones</strong> on Monday, June 21st 2027</p>
+      <header>
+        <h2>The Basic Language of the Web: HTML</h2>
+        <img src="./img/laura-jones.jpg" width="50px" />
+        <p id="author">
+          Posted by <strong>Laura Jones</strong> on Monday, June 21st 2027
+        </p>
+      </header>
       <img src="./img/post-img.jpg" width="500px" />
       <p>
         All modern websites and web applications are built using three
@@ -73,30 +78,30 @@
       <p>Hopefully you learned something new here. See you next time!</p>
     </article>
     <aside>
-      <h4>Related posts</h4>
+      <h4 class="related-post">Related posts</h4>
       <ul>
-        <li>
+        <li class="related">
           <img src="./img/related-1.jpg" width="75px" /><a href="#">
             How to Learn Web Development</a
           >
-          <p>By Dhairya Aggarwal</p>
+          <p class="related-author">By Dhairya Aggarwal</p>
         </li>
-        <li>
+        <li class="related">
           <img src="./img/related-2.jpg" width="75px" /><a href="#">
             The Unknown Powers of CSS</a
           >
-          <p>By Dhairya Aggarwal</p>
+          <p class="related-author">By Dhairya Aggarwal</p>
         </li>
-        <li>
+        <li class="related">
           <img src="./img/related-3.jpg" width="75px" /><a href="#">
             Why JavaScript is Awesome</a
           >
-          <p>By Dhairya Aggarwal</p>
+          <p class="related-author">By Dhairya Aggarwal</p>
         </li>
       </ul>
     </aside>
     <footer>
-      <p>Copyright © 2027 by The Code Magazine.</p>
+      <p id="copyright" class="copyright text">Copyright © 2027 by The Code Magazine.</p>
     </footer>
   </body>
 </html>
